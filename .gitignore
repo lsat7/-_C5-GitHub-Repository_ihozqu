@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.tox/
+.coverage
+htmlcov/
+
+# 虚拟环境
+.venv/
+venv/
+env/
+ENV/
+
+# 编辑器 / 系统
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# 审计工具自身产物（如需提交示例报告请移除本行）
+# audit_report.md
+
+# 本地临时文件
+*.tmp
+*.log
+*.bak
