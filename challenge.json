@@ -1,0 +1,28 @@
+{
+  "challenge_id": "C5",
+  "title": "GitHub Repository — challenge-audit",
+  "brief": "输入一个挑战资料包目录，输出 Markdown / JSON 提交前自查审计报告。",
+  "project_type": "自动化脚本（Python CLI）",
+  "required_deliverables": [
+    "README.md",
+    "challenge_audit.py",
+    "*repo链接*",
+    "*AI日志*",
+    "*拿来说明*",
+    "LICENSE",
+    ".gitignore",
+    "AI_LOG.md",
+    "ATTRIBUTION.md"
+  ],
+  "optional_deliverables": [
+    "AAR.md",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "CODE_OF_CONDUCT.md",
+    ".github/ISSUE_TEMPLATE/",
+    ".github/workflows/",
+    "tests/",
+    "examples/"
+  ],
+  "notes": "本文件既是本仓库的交付清单，也是 challenge_audit.py 的自审计（dogfood）输入。"
+}

@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "challenge_id": "C5",
+  "description": "本仓库自评用的 rubric 结构；signals 用结构化 type/target 描述，供 challenge_audit.py 读取。",
+  "dimensions": [
+    {
+      "key": "repoQuality",
+      "name": "仓库质量",
+      "max": 25,
+      "signals": [
+        {"type": "file", "target": "README.md"},
+        {"type": "regex", "target": "README.md", "pattern": "## 解决什么问题"},
+        {"type": "regex", "target": "README.md", "pattern": "## 快速开始"},
+        {"type": "regex", "target": "README.md", "pattern": "## 项目结构"},
+        {"type": "file", "target": "LICENSE"},
+        {"type": "file", "target": ".gitignore"}
+      ]
+    },
+    {
+      "key": "community",
+      "name": "社区要素",
+      "max": 20,
+      "signals": [
+        {"type": "file", "target": "CONTRIBUTING.md"},
+        {"type": "file", "target": "CODE_OF_CONDUCT.md"},
+        {"type": "prefix", "target": ".github/ISSUE_TEMPLATE/"},
+        {"type": "file", "target": "CHANGELOG.md"},
+        {"type": "prefix", "target": ".github/workflows/"}
+      ]
+    },
+    {
+      "key": "artifactCompleteness",
+      "name": "产物完整性",
+      "max": 15,
+      "signals": [
+        {"type": "file", "target": "challenge_audit.py"},
+        {"type": "file", "target": "README.md"},
+        {"type": "regex", "target": "README.md", "pattern": "### 安装"},
+        {"type": "count_min", "target": "examples/*.md", "min": 2},
+        {"type": "prefix", "target": "tests/"}
+      ]
+    },
+    {
+      "key": "aiUsage",
+      "name": "AI 使用质量",
+      "max": 20,
+      "signals": [
+        {"type": "regex", "target": "AI_LOG.md", "pattern": "prompt.*v"},
+        {"type": "regex", "target": "AI_LOG.md", "pattern": "\\[\\d{4}-\\d{2}-\\d{2}"},
+        {"type": "regex", "target": "AI_LOG.md", "pattern": "工作流"},
+        {"type": "regex", "target": "AI_LOG.md", "pattern": "纠错"}
+      ]
+    },
+    {
+      "key": "reflectionQuality",
+      "name": "复盘质量",
+      "max": 20,
+      "signals": [
+        {"type": "regex", "target": "AAR.md", "pattern": "根因"},
+        {"type": "regex", "target": "AAR.md", "pattern": "失败经验"},
+        {"type": "regex", "target": "AAR.md", "pattern": "改进方案"},
+        {"type": "regex", "target": "AAR.md", "pattern": "lsa"}
+      ]
+    }
+  ],
+  "red_flags": ["missing_artifacts", "no_ai_log", "one_shot_ai"]
+}
