@@ -1,0 +1,17 @@
+{
+  "challenge_id": "C5",
+  "title": "GitHub Repository（示例：合格提交）",
+  "required_deliverables": [
+    "README.md",
+    "*repo链接*",
+    "*AI日志*",
+    "*拿来说明*"
+  ],
+  "optional_deliverables": [
+    "LICENSE",
+    "AI_LOG.md",
+    "ATTRIBUTION.md",
+    "CONTRIBUTING.md"
+  ],
+  "notes": "项目类型：自动化脚本 —— 本目录用于演示全部必交项齐备时报告为 PASS"
+}

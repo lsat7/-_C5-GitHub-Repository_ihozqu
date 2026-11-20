@@ -1,0 +1,7 @@
+{
+  "challenge_id": "C5",
+  "title": "GitHub Repository（示例：缺件提交）",
+  "required_deliverables": "README.md,*repo链接*,*AI日志*,*拿来说明*",
+  "optional_deliverables": ["LICENSE", "CONTRIBUTING.md"],
+  "notes": "项目类型：自动化脚本 —— 故意缺少 AI 日志、拿来说明、repo 链接，用于演示 FAIL"
+}

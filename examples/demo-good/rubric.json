@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "dimensions": [
+    {
+      "key": "repoQuality",
+      "name": "仓库质量",
+      "max": 25,
+      "signals": [
+        {"type": "file", "target": "README.md"},
+        {"type": "regex", "target": "README.md", "pattern": "## 快速开始"},
+        {"type": "file", "target": "LICENSE"}
+      ]
+    },
+    {
+      "key": "aiUsage",
+      "name": "AI 使用质量",
+      "max": 20,
+      "signals": [
+        {"type": "regex", "target": "AI_LOG.md", "pattern": "prompt"},
+        {"type": "regex", "target": "AI_LOG.md", "pattern": "\\[\\d{4}-\\d{2}-\\d{2}"}
+      ]
+    }
+  ]
+}
