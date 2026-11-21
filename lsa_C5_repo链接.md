@@ -56,6 +56,7 @@ python challenge_audit.py . --no-timestamp --format json
 | `AI_LOG.md` / `lsa_C5_AI日志.md` | AI 使用日志（repo 内 / 提交版） |
 | `ATTRIBUTION.md` / `lsa_C5_拿来说明.md` | 拿来说明（repo 内 / 提交版） |
 | `AAR.md` | 附加复盘，姓名一律 lsa |
+| `lsa_C5_readme截图.png`（+ `-2/-3/-4`） | README 在 GitHub 上的真实渲染截图（4 张） |
 | `examples/*_report.md` | 真实运行输出示例（PASS + FAIL） |
 | `00_交付物索引.md` | 挑战要求 × 文件 × rubric 逐项对照 |
 

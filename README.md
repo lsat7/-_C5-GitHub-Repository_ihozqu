@@ -6,6 +6,10 @@
 
 提交挑战前，面对「README、AI 日志、拿来说明……到底齐没齐」的反复核对，`challenge-audit` 把这份清单变成一条命令：秒级告诉你哪些必交项已满足、哪些还缺、哪些加分项可以补，并可直接作为 CI 门禁使用。零第三方依赖，`git clone` 后 5 分钟内即可跑起来。
 
+> **README 渲染效果预览**（GitHub 页面实际截图，完整 4 张见 [截图 1](./lsa_C5_readme截图.png) · [2](./lsa_C5_readme截图-2.png) · [3](./lsa_C5_readme截图-3.png) · [4](./lsa_C5_readme截图-4.png)）：
+>
+> ![README 渲染截图](./lsa_C5_readme截图.png)
+
 ---
 
 ## 解决什么问题
@@ -120,6 +124,7 @@ python challenge_audit.py examples/demo-bad --no-timestamp
 ├── lsa_C5_repo链接.md              ← 提交：仓库链接
 ├── lsa_C5_AI日志.md                ← 提交：AI 日志
 ├── lsa_C5_拿来说明.md              ← 提交：拿来说明
+├── lsa_C5_readme截图*.png          ← 提交：README 渲染截图（4 张）
 ├── docs/
 │   └── usage.md                    ← 详细用法与边界情况
 ├── examples/
